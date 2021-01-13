@@ -60,3 +60,10 @@ linux 安装 virtualenv和virtualenvwrapper
 ===========
 
 [请查看word文档](https://www.cnblogs.com/zsjlovewm/p/14265182.html)
+
+Mysql数据库搭建
+============
+
+[项目中使用云服务数据库](https://www.cnblogs.com/zsjlovewm/p/14265185.html)
+
+[关闭防火墙](https://www.cnblogs.com/jxldjsn/p/10794171.html)
