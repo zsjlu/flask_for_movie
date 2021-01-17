@@ -41,5 +41,48 @@
         return render_template("index.html")
         
 ## JinJa2 模板语法详情讲解
+
+传递变量
+
+    @index_page.route("/")
+    def index():
+        name = "imooc"
+        return render_template("index.html", name=name)
+       
+    @index_page.route("/same")
+    def index_same():
+        name = "imooc"
+        context = {"name": name}
+        return render_template("index.html", **context)
+        
+Jinja2显示变量
+
+    <p>var name = {{ anme }} </p>  
+
+Jinja2基本语法
+
+- 判断if
+- 循环for
+- 模板继承
+  
+    
+    <p>
+    {% if user %}
+        {{user.nickname}} {{user.qq}}{{user.home_page}}
+        {%endif%}
+    </p>
+    
+    <p>
+        {% for tmp_num in num_list %}
+        {{ tmp_num }}
+        {% endfor %}
+    </p>
+ 
+Jinja2模板继承
+
+
+
+
+     
             
         

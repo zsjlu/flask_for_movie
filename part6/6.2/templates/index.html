@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>I love you</h1>
+    <h1>var name = {{ name }}</h1>
+<p>
+    {% if user %}
+        姓名：{{user.nickname}} qq：{{user.qq}}主页：{{user.home_page}}
+        {%endif%}
+    </p>
+
+    <p>
+        {% for tmp_num in num_list %}
+        {{ tmp_num }}
+        {% endfor %}
+    </p>
+</body>
+</html>
