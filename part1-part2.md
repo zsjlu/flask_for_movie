@@ -47,6 +47,10 @@ linux 安装 virtualenv和virtualenvwrapper
     - ln -s /usr/local/python3/bin/virtualenv /usr/bin/virtualenv
     - virtualenv -p /usr/bin/python3  vir_python3
 
+- pip 使用
+
+    - pip freeze > requirements.txt
+    - pip install -r requirements.txt
 
 - [virtualenvwrapper](https://www.cnblogs.com/VinsonYang/p/12333079.html)
     
@@ -55,6 +59,7 @@ linux 安装 virtualenv和virtualenvwrapper
     - deactivate 退出
     - mkvirtualenv 建虚拟环境
     - rmvirtualenv 删除虚拟环境
+    
     
 虚拟机Centos如何和主机共享目录
 ===========
