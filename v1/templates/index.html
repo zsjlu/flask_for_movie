@@ -1,0 +1,22 @@
+{% extends "common/layout.html" %}
+{% block content %}
+    <h1>I love you</h1>
+    <h1>var name = {{ name }}</h1>
+<p>
+    {% if user %}
+        姓名：{{user.nickname}} qq：{{user.qq}}主页：{{user.home_page}}
+        {%endif%}
+    </p>
+
+    <p>
+        {% for tmp_num in num_list %}
+        {{ tmp_num }}
+        {% endfor %}
+    </p>
+    <p>
+        {% for item in result %}
+        {{ item['User'] }}<br>
+        {% endfor %}
+    </p>
+    <h>{{ type }}</h>
+{% endblock %}
