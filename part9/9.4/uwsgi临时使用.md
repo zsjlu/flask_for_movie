@@ -1,0 +1,1 @@
+uwsgi --http-socket :5000 --wsgi-file manager.py --callable app --ocesses 4 --threads 2
